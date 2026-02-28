@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fruit Survey</title>
+  <style>
+    body {
+      background-color: yellow;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fffbe6;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    select, input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .radio-group, .checkbox-group {
+      margin: 10px 0;
+    }
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 30px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>The World of Fruit</h2>
+    <h2>Fruit Survey</h2>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" placeholder="Enter your address" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+      <label>How many pieces of fruit do you eat per day?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="number" value="0"> 0</label>
+        <label><input type="radio" name="number" value="1"> 1</label>
+        <label><input type="radio" name="number" value="2"> 2</label>
+        <label><input type="radio" name="number" value="more than 2"> More than 2</label>
+      </div>
+
+      <label for="fruit">My Favourite Fruit</label>
+      <select name="select-fruit" id="fruit" size="4">
+        <option value="">--Choose one--</option>
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Plum">Plum</option>
+        <option value="Pomegranate">Pomegranate</option>
+      </select>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="brochure"> Would you like a brochure?</label>
+      </div>
+
+      <input class="submit-btn" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
 <html>
 <body bgcolor="yellow">
   <center><hr><h2>The World of Fruit</h2><hr></center>
